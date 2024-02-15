@@ -1,0 +1,12 @@
+# .npmignore
+.vscode
+.nycrc.json
+.eslintignore
+.eslintrc.json
+.gitattributes
+.gitignore
+.npmrc
+node_modules
+test
+assets
+docs

@@ -1,0 +1,45 @@
+{
+  "name": "@sitinc/elasticwrap",
+  "version": "0.0.1",
+  "description": "Typescript utility wrapper around the ElasticSearch NodeJS API bindings.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "coverage": "nyc npm run test",
+    "fix": "eslint --fix --ext src/*.js --ext test/*.js",
+    "lint": "eslint --ext src/*.js --ext test/*.js",
+    "test": "mocha test/*.js --check-leaks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitinc/elasticwrap-ts.git"
+  },
+  "author": "Justin Randall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sitinc/elasticwrap-ts/issues"
+  },
+  "homepage": "https://github.com/sitinc/elasticwrap-ts#readme",
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "dotenv": "^16.4.1",
+    "eslint": "^8.53.0",
+    "eslint-config-google": "^0.14.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^10.2.0",
+    "mocha-param": "^2.0.1",
+    "nyc": "^15.1.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.12.1",
+    "@sitinc/utils": "^0.0.1"
+  }
+}
